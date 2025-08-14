@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="Vet+, adopción, mascotas, galería, clínica veterinaria" />
+  <meta name="description" content="Vet+ - Mascotas listas para un hogar, adopción responsable y experiencias de clientes." />
+  <meta name="author" content="Vet+" />
+
+  <title>Vet+</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    /* Menú activo y hover */
+    .navbar-nav .nav-item .nav-link {
+      color: #000;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+      color: #ff6600;
+    }
+
+    .navbar-nav .nav-item.active .nav-link {
+      color: #023b48;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .navbar-nav .nav-item.active .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #ff6600;
+      bottom: -5px;
+      left: 0;
+      border-radius: 2px;
+    }
+
+    /* Carrusel */
+    .carrusel {
+      position: relative;
+      overflow: hidden;
+      margin-top: 30px;
+    }
+
+    .carrusel-contenedor {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .carrusel button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 59, 72, 0.7);
+      border: none;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 10;
+    }
+
+    .carrusel .prev {
+      left: 10px;
+    }
+
+    .carrusel .next {
+      right: 10px;
+    }
+
+    .descripcion-texto {
+      text-align: center;
+      margin-top: 10px;
+      color: #023b48;
+      font-weight: 500;
+    }
+
+    /* Emergente */
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .popup-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      position: relative;
+    }
+
+    .popup-content .cerrar {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #023b48;
+    }
+
+    /* Clientes */
+    .client-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>VET+</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="pet.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="clinic.html">Clínica</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="buy.html">Adopta</a></li>
+              </ul>
+            </div>
+            <div class="quote_btn-container d-flex justify-content-center">
+              <a href="tel:+524446956887">Teléfono: +52 (444) 69-56-887</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- gallery section -->
+    <section class="gallery-section layout_padding">
+      <div class="container">
+        <h2 class="titulo-principal text-center">
+          Mascotas listas para un hogar...
+        </h2>
+      </div>
+      <div class="container">
+        <div class="carrusel">
+          <button class="prev">&#10094;</button>
+          <div class="carrusel-contenedor">
+            <div class="slide"><img src="images/a-1.jpg" alt=""></div>
+            <div class="slide"><img src="images/a-4.jpg" alt=""></div>
+            <div class="slide"><img src="images/a-2.jpg" alt=""></div>
+            <div class="slide"><img src="images/a-5.jpg" alt=""></div>
+            <div class="slide"><img src="images/a-3.jpg" alt=""></div>
+            <div class="slide"><img src="images/a-6.jpg" alt=""></div>
+            <div class="slide"><img src="images/a-7.jpg" alt=""></div>
+          </div>
+          <button class="next">&#10095;</button>
+          <div class="descripcion-texto">Aquí irá la descripción de la imagen.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergent section -->
+    <section class="buy_section layout_padding">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <a href="#" id="btnComprar">Requisitos</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="cerrar">&times;</span>
+        <h2>Información para una Adopción responsable</h2>
+        <ul>
+          <li>Ser mayor de edad (INE o identificación oficial vigente).</li>
+          <li>Comprobante de domicilio (luz, agua, teléfono o renta).</li>
+          <li>Entrevista o cuestionario sobre tu rutina y espacio disponible.</li>
+          <li>Visita al hogar.</li>
+          <li>Firma de contrato de adopción.</li>
+          <li>Cuota de recuperación.</li>
+          <li>5 visitas de seguimiento posteriores a la adopción.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- client section -->
+    <section class="client_section layout_padding-bottom">
+      <div class="container">
+        <h2 class="custom_heading text-center">
+          ¿Cómo es la <span>experiencia?</span>
+        </h2>
+        <p class="text-center">
+          Adoptar cambia la vida del animal y del adoptante. En VET+ abrimos corazones y hogares para una segunda oportunidad.
+        </p>
+        <div class="row">
+          <!-- Comentarios clientes -->
+          <div class="col-md-4 d-flex">
+            <div class="client_container p-3 border rounded shadow-sm mb-3 flex-fill d-flex flex-column">
+              <div class="d-flex align-items-center mb-2">
+                <img src="images/3.avif" class="client-img mr-2" alt="">
+                <h5 class="mb-0">Sandy Mar</h5>
+              </div>
+              <p>"Adopté a un gatito llamado Misu y ha sido una experiencia increíble..."</p>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="client_container p-3 border rounded shadow-sm mb-3 flex-fill d-flex flex-column">
+              <div class="d-flex align-items-center mb-2">
+                <img src="images/1.jpg" class="client-img mr-2" alt="">
+                <h5 class="mb-0">Angela Lopez</h5>
+              </div>
+              <p>"Adoptar a Max, un golden lleno de energía, ha sido lo mejor que me ha pasado..."</p>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="client_container p-3 border rounded shadow-sm mb-3 flex-fill d-flex flex-column">
+              <div class="d-flex align-items-center mb-2">
+                <img src="images/2.jpg" class="client-img mr-2" alt="">
+                <h5 class="mb-0">Maria García</h5>
+              </div>
+              <p>"Pequeño y valiente, adoptamos a Coco, un chihuahua que se ha ganado nuestros corazones..."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- info section -->
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="info_items">
+          <a href="https://maps.app.goo.gl/RNjvwd47vUeXrk1VA">
+            <div class="item ">
+              <div class="img-box box-1">
+                <img src="" alt="">
+              </div>
+              <div class="detail-box">
+                <p>Ubicación</p>
+              </div>
+            </div>
+          </a>
+          <div class="item ">
+            <div class="img-box box-2">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>+52 444-69-56-887</p>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="img-box box-3">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>VetMas@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end info_section -->
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+      <p>&copy; 2025 Todos los derechos reservados</p>
+    </section>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <script>
+    // Activar menú actual
+    const currentPage = location.pathname.split("/").pop();
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(item => {
+      if (item.getAttribute('href') === currentPage) {
+        item.parentElement.classList.add('active');
+      }
+    });
+
+    // Carrusel
+    document.querySelectorAll(".carrusel").forEach(carrusel => {
+      const contenedor = carrusel.querySelector(".carrusel-contenedor");
+      const slides = carrusel.querySelectorAll(".slide");
+      const descripcion = carrusel.querySelector(".descripcion-texto");
+      let indice = 0;
+
+      let descripciones = [
+        "Angel, Pantera, Kira, Mosaico y Pinto, Gatitos de 3 semanas, juguetones y desafiantes.",
+        "Dino, rescatado de 5 años, dramático pero amigable y cariñoso. Cuenta con todas sus vacunas.",
+        "Oreo, gatito de 6 meses, juguetón y extrovertido, vacunas al corriente.",
+        "Papatín, hermoso perrito de 6 meses, rescatado. Amigable con niños, un poco berrinchudo.",
+        "Felix, hermano de Oreo, reservado pero cariñoso, vacunas al corriente.",
+        "Capuchino, perrito recién rescatado de 5 años, amigable, sociable y cariñoso, vacunas al corriente.",
+        "Choco, gato adulto, reservado pero dramático, vacunas al corriente."
+      ];
+
+      descripcion.textContent = descripciones[indice];
+
+      function actualizarCarrusel() {
+        contenedor.style.transform = `translateX(-${indice * 100}%)`;
+        descripcion.textContent = descripciones[indice];
+      }
+
+      carrusel.querySelector(".next").addEventListener("click", () => {
+        indice = (indice + 1) % slides.length;
+        actualizarCarrusel();
+      });
+
+      carrusel.querySelector(".prev").addEventListener("click", () => {
+        indice = (indice - 1 + slides.length) % slides.length;
+        actualizarCarrusel();
+      });
+    });
+
+    // Emergente
+    document.getElementById("btnComprar").addEventListener("click", e => {
+      e.preventDefault();
+      document.getElementById("popup").style.display = "block";
+    });
+
+    document.querySelector(".cerrar").addEventListener("click", () => {
+      document.getElementById("popup").style.display = "none";
+    });
+
+    window.addEventListener("click", e => {
+      if (e.target == document.getElementById("popup")) {
+        document.getElementById("popup").style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

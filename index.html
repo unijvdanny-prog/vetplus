@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Vet+</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    /* Slider imagen circular */
+    .slider_img-box img {
+      width: 450px;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #023b48; /* borde principal */
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      display: block;
+      margin: auto;
+    }
+
+    .slider_img-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Menú activo y hover */
+    .navbar-nav .nav-item .nav-link {
+      color: #000;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+      color: #ff6600;
+    }
+
+    .navbar-nav .nav-item.active .nav-link {
+      color: #023b48;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .navbar-nav .nav-item.active .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #ff6600;
+      bottom: -5px;
+      left: 0;
+      border-radius: 2px;
+    }
+
+    /* Centrar slider verticalmente en pantallas pequeñas */
+    @media (max-width: 768px) {
+      .slider_img-box img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>VET+</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pet.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="clinic.html">Clinica</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="buy.html">Adopta</a>
+                </li>
+              </ul>
+            </div>
+            <div class="quote_btn-container d-flex justify-content-center">
+              <a href="">
+                Teléfono: +52 (444)-69-56-887
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <section class="slider_section position-relative">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <h1><span>Amor y cuidado</span> para cada patita</h1>
+                    <p>En Vet+ cuidamos a tu mascota como si fuera nuestra, con atención veterinaria profesional y mucho
+                      cariño.</p>
+                    <div class="btn-box">
+                      <a href="/buy.html" class="btn-1">Adopción</a>
+                      <a href="/contact.html" class="btn-2">Contacto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="images/portada.jpeg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about2.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2 class="custom_heading">Sobre nuestra <span>veterinaria</span></h2>
+            <p>En Vet+ contamos con más de 10 años de experiencia cuidando a tus mejores amigos. Ofrecemos atención médica,
+              estética, hospedaje y un programa de adopciones responsable.</p>
+            <div>
+              <a href="/service.html">Servicios</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_items">
+        <a href="https://maps.app.goo.gl/RNjvwd47vUeXrk1VA">
+          <div class="item ">
+            <div class="img-box box-1">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>Ubicación</p>
+            </div>
+          </div>
+        </a>
+        <div class="item ">
+          <div class="img-box box-2">
+            <img src="" alt="">
+          </div>
+          <div class="detail-box">
+            <p>+52 444-69-56-887</p>
+          </div>
+        </div>
+        <div class="item ">
+          <div class="img-box box-3">
+            <img src="" alt="">
+          </div>
+          <div class="detail-box">
+            <p>VetMas@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>&copy; 2019 Todos los derechos reservados.</p>
+  </section>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

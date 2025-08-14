@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="Vet+, clínica veterinaria, contacto, ubicación, teléfono" />
+  <meta name="description" content="Vet+ - Contáctanos y encuentra nuestra ubicación, teléfono y correo." />
+  <meta name="author" content="Vet+" />
+
+  <title>Vet+</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    /* Menú activo y hover */
+    .navbar-nav .nav-item .nav-link {
+      color: #000;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+      color: #ff6600;
+    }
+
+    .navbar-nav .nav-item.active .nav-link {
+      color: #023b48;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .navbar-nav .nav-item.active .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #ff6600;
+      bottom: -5px;
+      left: 0;
+      border-radius: 2px;
+    }
+
+    /* Formulario de contacto */
+    .map_section h3 {
+      margin-bottom: 20px;
+      color: #023b48;
+      font-weight: 700;
+    }
+
+    .map_section input,
+    .map_section textarea {
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .map_section button {
+      background-color: #023b48;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .map_section button:hover {
+      background-color: #015261;
+    }
+
+    /* Ajuste de mapa y formulario en móviles */
+    @media (max-width: 768px) {
+      .map_section iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>VET+</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="pet.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="clinic.html">Clínica</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="buy.html">Adopta</a></li>
+              </ul>
+            </div>
+            <div class="quote_btn-container d-flex justify-content-center">
+              <a href="tel:+524446956887">Teléfono: +52 (444) 69-56-887</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- map/contact section -->
+    <section class="map_section" style="margin-top:50px; margin-bottom:50px;">
+      <div class="container">
+        <div class="row">
+          <!-- Formulario -->
+          <div class="col-md-6 col-sm-12 mb-4">
+            <form action="">
+              <div class="text-center">
+                <h3>Contáctanos</h3>
+              </div>
+              <input type="text" placeholder="Nombre">
+              <input type="text" placeholder="Número telefónico">
+              <input type="email" placeholder="Correo">
+              <textarea placeholder="Mensaje" rows="4"></textarea>
+              <div class="d-flex justify-content-center">
+                <button type="submit">ENVIAR</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Mapa -->
+          <div class="col-md-6 col-sm-12">
+            <iframe
+              src="https://www.google.com/maps?q=22.179825129039543,-100.9466258423275&hl=es;z=15&output=embed"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- info section -->
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="info_items">
+          <a href="https://maps.app.goo.gl/RNjvwd47vUeXrk1VA">
+            <div class="item ">
+              <div class="img-box box-1">
+                <img src="" alt="">
+              </div>
+              <div class="detail-box">
+                <p>Ubicación</p>
+              </div>
+            </div>
+          </a>
+          <div class="item ">
+            <div class="img-box box-2">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>+52 444-69-56-887</p>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="img-box box-3">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>VetMas@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end info_section -->
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+      <p>&copy; 2025 Todos los derechos reservados</p>
+    </section>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <script>
+    // Activar menú según página actual
+    const currentPage = location.pathname.split("/").pop();
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(item => {
+      if (item.getAttribute('href') === currentPage) {
+        item.parentElement.classList.add('active');
+      }
+    });
+  </script>
+</body>
+
+</html>
